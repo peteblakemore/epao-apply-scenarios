@@ -1,0 +1,105 @@
+[
+  {
+    "value": "able seafarer",
+    "label": "able seafarer",
+    "name": "Able seafairing 101",
+    "requirements": [
+      "Able seafairing requirement 1",
+      "Able seafairing requirement 2",
+      "Able seafairing requirement 3"
+    ]
+  },
+  {
+    "value": "actor, puppeteer/marionetteer (actor/actress)",
+    "label": "actor, puppeteer/marionetteer (actor/actress)",
+    "name": "Acting 101",
+    "requirements": [
+      "Acting requirement 1",
+      "Acting requirement 2",
+      "Acting requirement 3",
+      "Acting requirement 4"
+    ]
+  },
+  {
+    "value": "actuary",
+    "label": "actuary",
+    "name": "Actuarying 101",
+    "requirements": [
+      "Actuarying requirement 1",
+      "Actuarying requirement 2",
+      "Actuarying requirement 3",
+      "Actuarying requirement 4",
+      "Actuarying requirement 5"
+    ]
+  },
+  {
+    "value": "administrative worker",
+    "name": "Administration 101",
+    "requirements": [
+      "Administration requirement 1",
+      "Administration requirement 2"
+    ]
+  },
+  {
+    "value": "advertising manager",
+    "name": "Advertising 101",
+    "requirements": [
+      "Advertising requirement 1",
+      "Advertising requirement 2",
+      "Advertising requirement 3",
+      "Advertising requirement 4",
+      "Advertising requirement 5"
+    ]
+  },
+  {
+    "value": "aerial rigger",
+    "name": "Rigging 101",
+    "requirements": [
+      "Rigging requirement 1",
+      "Rigging requirement 2",
+      "Rigging requirement 3",
+      "Rigging requirement 4",
+      "Rigging requirement 5"
+    ]
+  },
+  {
+    "value": "agricultural adviser (farming adviser)",
+    "name": "Agriculture 101",
+    "requirements": [
+      "Agriculture requirement 1",
+      "Agriculture requirement 2",
+      "Agriculture requirement 3",
+      "Agriculture requirement 4",
+      "Agriculture requirement 5"
+    ]
+  },
+  {
+    "value": "agricultural machinery mechanic (agricultural mechanic)",
+    "name": "Agriculture machinery 101",
+    "requirements": [
+      "Agriculture machinery requirement 1",
+      "Agriculture machinery requirement 2",
+      "Agriculture machinery requirement 3",
+      "Agriculture machinery requirement 4",
+      "Agriculture machinery requirement 5"
+    ]
+  },
+  {
+    "value": "agronomist",
+    "name": "Agronomy 101",
+    "requirements": ["Agronomy requirement 1", "Agronomy requirement 2"]
+  },
+  {
+    "value": "air traffic controller",
+    "name": "Air traffic controlling 101",
+    "requirements": [
+      "Air traffic controlling requirement 1",
+      "Air traffic controlling requirement 2",
+      "Air traffic controlling requirement 3",
+      "Air traffic controlling requirement 4",
+      "Air traffic controlling requirement 5",
+      "Air traffic controlling requirement 6",
+      "Air traffic controlling requirement 7"
+    ]
+  }
+]
