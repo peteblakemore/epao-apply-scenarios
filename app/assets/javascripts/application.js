@@ -22,9 +22,12 @@ $(document).ready(function() {
         });
         // Manually filter as we're not using a server to filter results
         response($.ui.autocomplete.filter(array, request.term));
-        $.ui.autocomplete.filter(array, request.term).length === 0
-          ? $(".js-no-results").show()
-          : $(".js-no-results").hide();
+        if ($.ui.autocomplete.filter(array, request.term).length === 0) {
+          $(".js-no-results").show();
+          $(".js-prerequisites").hide();
+        } else {
+          $(".js-no-results").hide();
+        }
       });
     },
     select: function(event, ui) {
