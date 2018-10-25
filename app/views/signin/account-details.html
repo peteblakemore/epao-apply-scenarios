@@ -1,0 +1,53 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create an EPAO account
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+<main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Create account</h1>
+
+        <form action="access-code" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--m" for="first-name">
+              First name
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="first-name" name="first-name" type="text" aria-describedby="first-name-hint">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--m" for="last-name">
+              Last name
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="last-name" name="last-name" type="text" aria-describedby="last-name-hint">
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-label--m" for="email-address">
+              Email address
+            </label>
+            <span id="email-address-hint" class="govuk-hint">
+              For example, johnsmith@gmail.com
+            </span>
+            <input class="govuk-input govuk-input--width-20" id="email-address" name="email-address" type="text" aria-describedby="email-address-hint">
+          </div>
+
+
+
+          <button type="submit" class="govuk-button">
+            Continue
+          </button>
+
+        </form>
+      </div>
+    </div>
+</main>
+</div>
+{% endblock %}

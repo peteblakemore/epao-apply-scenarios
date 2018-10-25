@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create an EPAO account
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+{% block content %}
+<div class="govuk-width-container">
+<main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <form action="password" method="post" novalidate>
+
+        <div class="govuk-form-group">
+
+
+          <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+              <h1 class="govuk-fieldset__heading">
+                Enter your access code
+              </h1>
+            </legend>
+            <p class="govuk-body">
+              We just sent an access code to {{ data['email-address'] }}
+            </p>
+            <p class="govuk-body">
+              It may take a few minutes to arrive.
+            </p>
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-!-font-weight-bold" for="name">
+                Access code
+              </label>
+              <input class="govuk-input govuk-input--width-10" id="name" name="name" type="text">
+            </div>
+
+          </div>
+        </fieldset>
+          </div>
+            </div>
+            <button type="submit" class="govuk-button">
+              Continue
+            </button>
+          </form>
+        </div>
+
+</main>
+</div>
+{% endblock %}

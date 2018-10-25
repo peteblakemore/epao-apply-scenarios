@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "application-overview",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">
+        Company details
+      </h1>
+
+      <p class="govuk-body">You must answer all the questions.</p>
+
+      <ul class="app-task-list__one-section">
+
+
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="#" aria-describedby="completed">
+                Registered organisation name
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="#" aria-describedby="completed">
+                Registered address
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="#" aria-describedby="completed">
+                UK Provider Registration Number (UKPRN)
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="#" aria-describedby="completed">
+                Part of a group of companies?
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="#" aria-describedby="completed">
+                Overall executive management
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            </li>
+            <li class="app-task-list__item">
+              <a class="app-task-list__task-name" href="#" aria-describedby="completed">
+                Directors
+              </a>
+              <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            </li>
+      </ul>
+      <a href="application-overview" class="govuk-button">
+        Return to application overview
+      </a>
+    </div>
+  </div>
+
+{% endblock %}

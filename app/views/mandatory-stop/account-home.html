@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+  href: "start",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Account home
+    </h1>
+    <h2 class="govuk-heading-m">
+      Certification
+    </h2>
+
+    <a href="certification/certification-search.html" class="govuk-link govuk-!-font-weight-bold">Record an end-point assessment grade</a>
+    <p class="govuk-body">Record grades for a government funded apprenticeship and request certificates</p>
+
+    <a href="#" class="govuk-link govuk-!-font-weight-bold">Previous assessments</a>
+    <p class="govuk-body">View previously recorded assessment grades</p>
+
+    <h2 class="govuk-heading-m">
+      Standards
+    </h2>
+
+    <a href="#" class="govuk-link govuk-!-font-weight-bold">Approved standards</a>
+    <p class="govuk-body">Show standards you're able to assess for</p>
+
+    <a href="standard-name.html" class="govuk-link govuk-!-font-weight-bold">Apply to assess a standard</a>
+    <p></p>
+
+    <h2 class="govuk-heading-m">
+      Opportunity finder
+    </h2>
+
+    <a href="#" class="govuk-link govuk-!-font-weight-bold">Find standards</a>
+    <p class="govuk-body">Search for standards, including suggestions for you and standards that have a shortage of end-point assessors</p>
+
+    <h2 class="govuk-heading-m">
+      Organisation details
+    </h2>
+
+    <a href="#" class="govuk-link govuk-!-font-weight-bold">Update your details</a>
+    <p class="govuk-body">View and edit your organisation details</p>
+
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Confirmation page example
+{% endblock %}
+
+{% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">Account created</h1>
+        <div class="govuk-panel__body">
+          Your Department for Education account has been created
+        </div>
+      </div>
+
+      <p class="govuk-body">
+        We have sent you a confirmation email.
+      </p>
+
+      <p class="govuk-body">
+        You can use your account to sign in to your application to become an end point assessment organisation (EPAO).
+      </p>
+
+      <h2 class="govuk-heading-m">What happens next</h2>
+      <p>Return to the <a class="govuk-link" href="start">Become and end point assessment organisation</a> start page</p>
+      <p><a class="govuk-link" href="signin">Sign in</a> and start an application to become an end point assessment organisation</p>
+
+
+    </div>
+  </div>
+
+{% endblock %}

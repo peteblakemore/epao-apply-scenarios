@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Create an EPAO account
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "start",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Sign in</h1>
+        <p class="govuk-body">
+          If you do not have an account, you can <a href="account-creation">create one now</a>.
+        </p>
+
+        <form action="search-org" method="post" novalidate>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="email-address">
+              Email address
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="email" name="email" type="text" aria-describedby="email-hint">
+          </div>
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="password">
+              Password
+            </label>
+            <input class="govuk-input govuk-input--width-20" id="password" password="password" type="password">
+          </div>
+          <button type="submit" class="govuk-button">
+            Continue
+          </button>
+        </form>
+
+
+<p class="govuk-body"><a href="#" class="govuk-link">Forgot your password</a></p>
+
+
+
+
+
+
+      </div>
+    </div>
+{% endblock %}
