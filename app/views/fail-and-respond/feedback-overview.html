@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Question page
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "feedback-intro",
+    text: "Back"
+  }) }}
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-l">
+      Application feedback
+    </h1>
+
+    <p class="govuk-body">Go into each question to view feedback, where you will have an opportunity to provide more information.</p>
+
+    <ol class="app-task-list">
+      <li>
+        <h2 class="app-task-list__section"><span class="app-task-list__section-number">1.</span> Assessment plan</h2>
+        <div class="govuk-inset-text">No further action required for this section</div>
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section"><span class="app-task-list__section-number">2.</span> Required documentation</h2>
+        <ul class="app-task-list__items">
+
+          <li class="app-task-list__item">
+            <a aria-describedby="eligibility-completed" class="app-task-list__task-name" href="questions/audit">Internal audit policies and processes</a>
+            <!-- <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong> -->
+          </li>
+
+          <li class="app-task-list__item">
+            <a aria-describedby="eligibility-completed" class="app-task-list__task-name" href="questions/insurance">Insurance</a>
+            <!-- <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong> -->
+          </li>
+
+          <li class="app-task-list__item">
+            <a aria-describedby="eligibility-completed" class="app-task-list__task-name" href="questions/safeguarding">Safeguarding policy</a>
+            <!-- <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong> -->
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <h2 class="app-task-list__section"><span class="app-task-list__section-number">3.</span> Capacity and capability</h2>
+        <div class="govuk-inset-text">No further action required for this section</div>
+      </li>
+    </ol>
+
+    <a href="confirmation" class="govuk-button">
+      Submit application
+    </a>
+  </div>
+</div>
+
+{% endblock %}
