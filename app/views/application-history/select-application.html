@@ -1,0 +1,61 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+  href: "start",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-l">
+      Select application
+    </h1>
+    <p class="govuk-body">Select your application from the table.</p>
+    <p class="govuk-body">If you have made previous applications to join the register, you can re-visit them to review your previous answers, and see feedback where applicable.</p>
+
+    <table class="govuk-table">
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Application</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Status</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Not yet submitted</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">In progress</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">
+        <a href="#" class="govuk-link">View</a>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Submitted on 3/4/2018</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Failed</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">
+        <a href="#" class="govuk-link">View</a>
+      </td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">Submitted on 18/3/2018</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">Failed</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">
+        <a href="#" class="govuk-link">View</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+</div>
+
+{% endblock %}
