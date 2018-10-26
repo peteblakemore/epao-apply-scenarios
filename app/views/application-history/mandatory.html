@@ -1,0 +1,261 @@
+{% extends "layout.html" %}
+
+<!-- Adds a class to increase vertical spacing for pages without a back button -->
+{% set mainClasses = "govuk-main-wrapper--l" %}
+
+{% block pageTitle %}
+  Task list
+{% endblock %}
+
+{% block beforeContent %}
+  {{ govukBackLink({
+    href: "declarations",
+    text: "Back"
+  }) }}
+{% endblock %}
+
+{% block content %}
+<div class="grid-grid-row">
+  <div class="govuk-grid-column-two-thirds app-column-minimum">
+    <h1 class="govuk-heading-l">Grounds for mandatory exclusion</h1>
+
+            <p class="govuk-body">You must be able to truthfully answer ‘no’ to every question under ‘Grounds for mandatory exclusion’ for your application to be considered eligible. If you can’t answer ‘no’ to every question in this section, it’s very unlikely that your application will be accepted.</p>
+
+            <p class="govuk-body">In questions 5 to 9 ‘anyone who represents, supervises or has control in your organisation or a partner or parent organisation’ includes members of your group of economic operators, their proposed subcontractors, and any directors, partners, or any other person who has powers of representation, decision or control.</p>
+
+            <form action="declarations_overview" method="post">
+                <ol class="app-questions-list" start="5">
+
+                    <div class="govuk-form-group" id="bribary-and-corruption">
+                    <li>
+                        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <p class="govuk-body">
+                                    Please confirm whether, within the past 5 years, anyone who represents, supervises or has control in your organisation or a partner or parent organisations has been convicted of:
+                                </p>
+                            </legend>
+                            <!-- <span id="bribary-and-corruption-hint" class="govuk-hint">
+
+                            </span> -->
+                            <ul class="govuk-list govuk-list--bullet">
+
+                                <li>corruption within the meaning of section 1(2) of the Public Bodies Corrupt Practices Act 1889 or section 1 of the Prevention of Corruption Act 1906</li>
+
+                                <li>the common law offence of bribery</li>
+
+                                <li>bribery within the meaning of sections 1, 2, or 6 of the Bribery Act 2010</li>
+
+                                <li>any other offence within the meaning of article 57(1) of the Public Contracts Directive as defined by the law of any jurisdiction outside England and Wales and Northern Ireland</li>
+
+                                <li>any other offence within the meaning of article 57(1) of the Public Contracts Directive created after 26th February 2015 in England and Wales or Northern Ireland</li>
+
+                            </ul>
+                            <div class="govuk-radios govuk-!-margin-bottom-5">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="bribary-and-corruption-yes" name="bribary-and-corruption" type="radio" value="yes"  >
+                                    <label class="govuk-label govuk-radios__label" for="bribary-and-corruption-yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="bribary-and-corruption-no" name="bribary-and-corruption" type="radio" value="no" checked="checked">
+                                    <label class="govuk-label govuk-radios__label" for="bribary-and-corruption-no">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </li>
+                    </div>
+
+                    <div class="govuk-form-group" id="fraud">
+                    <li>
+                        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <p class="govuk-body">
+                                    Please confirm whether, within the past 5 years, anyone who represents, supervises or has control in your organisation or a partner or parent organisations has been convicted of any offence that relates to fraud affecting the European Communities’ financial interests as defined by article 1 of the Convention of the Protection of the Financial Interests of the European Communities, including:
+                                </p>
+                            </legend>
+                            <ul class="govuk-list govuk-list--bullet">
+
+                                <li>the common law offence of cheating the Revenue (HMRC)</li>
+
+                                <li>the common law offence of conspiracy to defraud</li>
+
+                                <li>fraud or theft within the meaning of the Theft Act 1968, the Theft Act (Northern Ireland) 1969, the Theft Act 1978 or the Theft (Northern Ireland) Order 1978</li>
+
+                                <li>fraudulent trading within the meaning of section 458 of the Companies Act 1985, article 451 of the Companies (Northern Ireland) Order 1986 or section 993 of the Companies Act 2006</li>
+
+                                <li>fraudulent evasion within the meaning of section 170 of the Customs and Excise Management Act 1979 or section 72 of the Value Added Tax Act 1994</li>
+
+                                <li>an offence in connection with taxation in the European Union within the meaning of section 71 of the Criminal Justice Act 1993</li>
+
+                                <li>destroying, defacing or concealing of documents or procuring the execution of a valuable security within the meaning of section 20 of the Theft Act 1968 or section 19 of the Theft Act (Northern Ireland) 1969</li>
+
+                                <li>fraud within the meaning of section 2, 3 or 4 of the Fraud Act 2006</li>
+
+                                <li>the possession of articles for use in frauds within the meaning of section 6 of the Fraud Act 2006, or the making, adapting, supplying or offering to supply articles for use in frauds within the meaning of section 7 of that Act</li>
+
+                            </ul>
+
+                            <div class="govuk-radios govuk-!-margin-bottom-5">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="fraud-yes" name="fraud" type="radio" value="yes"  >
+                                    <label class="govuk-label govuk-radios__label" for="fraud-yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="fraud-no" name="fraud" type="radio" value="no" checked="checked">
+                                    <label class="govuk-label govuk-radios__label" for="fraud-no">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+
+
+                        </fieldset>
+                    </li>
+                    </div>
+
+                    <div class="govuk-form-group" id="terrorism">
+                    <li>
+                        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <p class="govuk-body">
+                                    Please confirm whether, within the past 5 years, anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of any offence listed in:
+                                </p>
+                            </legend>
+                            <!-- <span id="terrorism-hint" class="govuk-hint">
+
+                            </span> -->
+                            <ul class="govuk-list govuk-list--bullet">
+
+                                <li>section 41 of the Counter Terrorism Act 2008</li>
+
+                                <li>schedule 2 of the Counter Terrorism Act 2008 where the court has determined that there is a terrorist connection</li>
+
+                                <li>any offence under sections 44 to 46 of the Serious Crime Act 2007</li>
+
+                            </ul>
+                            <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-3">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                                  Yes
+                                </label>
+                              </div>
+                              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-3">
+                                <div class="govuk-warning-text">
+                                  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                                  <strong class="govuk-warning-text__text">
+                                    <span class="govuk-warning-text__assistive">Warning</span>
+                                    You are not eligible to join the register
+                                  </strong>
+                                </div>
+                              </div>
+
+                            <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="No" data-aria-controls="conditional-how-contacted-conditional-2" checked="checked">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+                                  No
+                                </label>
+                        </fieldset>
+                    </li>
+                    </div>
+
+                    <div class="govuk-form-group" id="organised-crime">
+                    <li>
+                        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <p class="govuk-body">
+                                    Please confirm whether, within the past 5 years, anyone who represents, supervises or has control in your organisation or a partner or parent organisation has been convicted of:
+                                </p>
+                            </legend>
+                            <!-- <span id="organised-crime-hint" class="govuk-hint">
+
+                            </span> -->
+                            <ul class="govuk-list govuk-list--bullet">
+
+                                <li>money laundering within the meaning of sections 340(11) and 415 of the Proceeds of Crime Act 2002</li>
+
+                                <li>an offence in connection with the proceeds of criminal conduct within the meaning of section 93A, 93B or 93C of the Criminal Justice Act 1988 or article 45, 46 or 47 of the Proceeds of Crime (Northern Ireland) Order 1996</li>
+
+                                <li>an offence under section 4 of the Asylum and Immigration (Treatment of Claimants etc) Act 2004</li>
+
+                                <li>an offence under section 59A of the Sexual Offences Act 2003</li>
+
+                                <li>an offence under section 71 of the Coroners and Justice Act 2009</li>
+
+                                <li>an offence in connection with the proceeds of drug trafficking within the meaning of section 49, 50 and 51 of the Drug Trafficking Act 1994</li>
+
+                            </ul>
+                            <div class="govuk-radios govuk-!-margin-bottom-5">
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-3">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+                                  Yes
+                                </label>
+                              </div>
+                              <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-4">
+                                <div class="govuk-warning-text">
+                                  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                                  <strong class="govuk-warning-text__text">
+                                    <span class="govuk-warning-text__assistive">Warning</span>
+                                    You are not eligible to join the register
+                                  </strong>
+                                </div>
+
+                              </div>
+                              <div class="govuk-radios__item">
+                                <input class="govuk-radios__input" id="how-contacted-conditional-4" name="how-contacted" type="radio" value="No" data-aria-controls="conditional-how-contacted-conditional-4" checked="checked">
+                                <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-4">
+                                  No
+                                </label>
+                              </div>
+                            </div>
+                        </fieldset>
+                    </li>
+                    </div>
+
+                    <div class="govuk-form-group" id="breach-of-tax">
+                    <li>
+                        <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+                            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+                                <p class="govuk-body">
+                                    Have members of your organisation or a partner organisation been legally found to be in breach of tax payments or social security contributions?
+                                </p>
+                            </legend>
+                            <!-- <span id="breach-of-tax-hint" class="govuk-hint">
+
+                            </span> -->
+                            <ul class="govuk-list govuk-list--bullet">
+
+                            </ul>
+                            <div class="govuk-radios govuk-!-margin-bottom-5">
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="breach-of-tax-yes" name="breach-of-tax" type="radio" value="yes"  >
+                                    <label class="govuk-label govuk-radios__label" for="breach-of-tax-yes">
+                                        Yes
+                                    </label>
+                                </div>
+                                <div class="govuk-radios__item">
+                                    <input class="govuk-radios__input" id="breach-of-tax-no" name="breach-of-tax" type="radio" value="no" >
+                                    <label class="govuk-label govuk-radios__label" for="breach-of-tax-no">
+                                        No
+                                    </label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </li>
+                    </div>
+
+                </ol>
+                <button type="submit" class="govuk-button">
+                  Save and return
+                </button>
+            </form>
+            </div>
+  <div class="govuk-clearfix"></div>
+</div>
+{% endblock %}
