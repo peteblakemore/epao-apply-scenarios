@@ -4,7 +4,7 @@
 
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
-  serviceName: 'EPAO account: sign in or set up',
+  serviceName: 'Create or sign in to your end-point assessment organisation (EPAO) account',
 
   // Default port that prototype runs on
   port: '3000',
