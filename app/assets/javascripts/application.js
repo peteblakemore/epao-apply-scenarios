@@ -49,3 +49,39 @@ $(document).ready(function() {
     }
   });
 });
+
+(function() {
+  var PasswordToggler = function(element, field) {
+    this.element = element;
+    this.field = field;
+    this.toggle();
+  };
+
+  PasswordToggler.prototype = {
+    toggle: function() {
+      var self = this;
+      self.element.addEventListener(
+        "change",
+        function() {
+          if (self.element.checked) {
+            self.field.setAttribute("type", "text");
+            self.element.labels[0].innerText = "Hide password";
+          } else {
+            self.field.setAttribute("type", "password");
+            self.element.labels[0].innerText = "Show password";
+          }
+        },
+        false
+      );
+    }
+  };
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var checkbox = document.querySelector("#show-password");
+    var pwd = document.querySelector("#new-password");
+
+    if (checkbox && pwd) {
+      var toggler = new PasswordToggler(checkbox, pwd);
+    }
+  });
+})();
