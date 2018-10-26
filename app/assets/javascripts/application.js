@@ -8,7 +8,7 @@ if (window.console && window.console.info) {
 $(document).ready(function() {
   window.GOVUKFrontend.initAll();
 
-  $(".js-prerequisites, .js-no-results").hide();
+  $(".js-prerequisites, .js-no-results, .js-choose-standard-button").hide();
   $("#standard-name").autocomplete({
     source: function(request, response) {
       $.getJSON("/public/javascripts/standards.json", function(data) {
@@ -24,7 +24,7 @@ $(document).ready(function() {
         response($.ui.autocomplete.filter(array, request.term));
         if ($.ui.autocomplete.filter(array, request.term).length === 0) {
           $(".js-no-results").show();
-          $(".js-prerequisites").hide();
+          $(".js-prerequisites, .js-choose-standard-button").hide();
         } else {
           $(".js-no-results").hide();
         }
@@ -37,10 +37,10 @@ $(document).ready(function() {
         ui.item.requirements.map(function(requirement, index) {
           $(".js-prerequisites ul").append("<li>" + requirement + "</li>");
         });
-        $(".js-prerequisites").show();
+        $(".js-prerequisites, .js-choose-standard-button").show();
       } else {
         $(".js-prerequisites ul").empty();
-        $(".js-prerequisites").hide();
+        $(".js-prerequisites, .js-choose-standard-button").hide();
       }
       // Clear input on select.. if we do this
       // (or need to carry any other data accross) we'll need to user hidden form inputs
