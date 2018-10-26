@@ -2,11 +2,10 @@
   {
     "value": "able seafarer",
     "label": "able seafarer",
-    "name": "Able seafairing 101",
+    "name": "Able seafarer",
     "requirements": [
-      "Able seafairing requirement 1",
-      "Able seafairing requirement 2",
-      "Able seafairing requirement 3"
+      "Membership of the Register of Maritime Assessors",
+      "Registered with Ofqual"
     ]
   },
   {
