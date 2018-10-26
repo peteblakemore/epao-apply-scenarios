@@ -4,13 +4,6 @@
   Blank page
 {% endblock %}
 
-{% block beforeContent %}
-{{ govukBackLink({
-  href: "start",
-  text: "Back"
-}) }}
-{% endblock %}
-
 {% block content %}
 
 <div class="govuk-grid-row">
@@ -35,7 +28,7 @@
       <th class="govuk-table__header" scope="row">Not yet submitted</th>
       <td class="govuk-table__cell govuk-table__cell--numeric">In progress</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">
-        <a href="#" class="govuk-link">View</a>
+        <a href="application-overview" class="govuk-link">View</a>
       </td>
     </tr>
     <tr class="govuk-table__row">

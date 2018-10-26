@@ -41,7 +41,14 @@
 }
 
 .app-task-list__one-section {
-  padding: 0;
+  padding: 0px;
   list-style-type: none;
   font-size: 19px;
+}
+
+.app-questions-list {
+  padding: 20px;
+  font-family: 'nta', Arial, sans-serif;
+  font-size: 19px;
+  font-weight: 700;
 }

@@ -1,0 +1,57 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Blank page
+{% endblock %}
+
+{% block beforeContent %}
+{{ govukBackLink({
+  href: "select-application",
+  text: "Back"
+}) }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">
+      Application overview
+    </h1>
+
+    <div class="section-div">
+      <h2 class="govuk-heading-m">
+        Company details
+      </h2>
+      <span id="company-details-hint" class="govuk-hint apply-hint">
+        6 of 6 questions completed
+      </span>
+      <p class="govuk-body"><a href="company-details" class="govuk-link">Go to company details</a></p>
+    </div>
+
+    <div class="section-div">
+      <h2 class="govuk-heading-m">
+        Declarations
+      </h2>
+      <span id="declarations-hint" class="govuk-hint apply-hint">
+        7 of 33 questions completed
+      </span>
+      <p class="govuk-body"><a href="declarations" class="govuk-link">Go to declarations</a></p>
+    </div>
+
+    <div class="section-div">
+      <h2 class="govuk-heading-m">
+        Financial health
+      </h2>
+      <span id="financial-health-hint" class="govuk-hint apply-hint">
+        5 of 14 questions completed
+      </span>
+      <p class="govuk-body"><a href="financial-health" class="govuk-link">Go to financial health</a></p>
+    </div>
+
+
+  </div>
+</div>
+
+{% endblock %}
