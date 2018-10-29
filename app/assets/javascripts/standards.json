@@ -102,17 +102,15 @@
     ]
   },
   {
-    "value": "financial adviser",
-    "name": "Financial advising",
+    "value": "Financial adviser",
+    "name": "Financial adviser",
     "requirements": [
-      "Financial advising requirement 1",
-      "Financial advising requirement 2",
-      "Financial advising requirement 3",
-      "Financial advising requirement 4",
-      "Financial advising requirement 5",
-      "Financial advising requirement 6",
-      "Financial advising requirement 7",
-      "Financial advising requirement 8"
+      "Financial adviser requirement 1",
+      "Financial adviser requirement 2",
+      "Financial adviser requirement 3",
+      "Financial adviser requirement 4",
+      "Financial adviser requirement 5",
+      "Financial adviser requirement 6"
     ]
   }
 ]
