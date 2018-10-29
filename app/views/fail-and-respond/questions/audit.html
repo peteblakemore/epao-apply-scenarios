@@ -19,7 +19,7 @@
         <form action="insurance" method="post" novalidate>
 
           <div class="govuk-form-group">
-  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+  <fieldset class="govuk-fieldset" aria-describedby="internal-audit-conditional-hint">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
       <h1 class="govuk-fieldset__heading">
         Does your organisation have an internal audit policy or process in place with regard to fraud and financial irregularity?
@@ -32,29 +32,22 @@
 
     <div class="govuk-radios govuk-radios--conditional" data-module="radios">
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+        <input class="govuk-radios__input" id="internal-audit-conditional-1" name="internal-audit" type="radio" value="Yes" data-aria-controls="conditional-internal-audit-conditional-1" {{ checked("internal-audit", "Yes") }}>
+        <label class="govuk-label govuk-radios__label" for="internal-audit-conditional-1">
           Yes
         </label>
       </div>
-      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-internal-audit-conditional-1">
         <div class="govuk-form-group">
           <label class="govuk-label" for="link-to-audit">
             Include a link to your organisation's internal audit policy
           </label>
           <input class="govuk-input govuk-input--width-20" id="contact-by-email" name="link-to-audit" type="email">
         </div>
-
-
-
-
-
-
-
       </div>
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+        <input class="govuk-radios__input" id="internal-audit-conditional-2" name="internal-audit" type="radio" value="No" data-aria-controls="conditional-internal-audit-conditional-2" {{ checked("internal-audit", "No") }}>
+        <label class="govuk-label govuk-radios__label" for="internal-audit-conditional-2">
           No
         </label>
       </div>

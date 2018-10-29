@@ -8,7 +8,7 @@ if (window.console && window.console.info) {
 $(document).ready(function() {
   window.GOVUKFrontend.initAll();
 
-  $(".js-prerequisites, .js-no-results, .js-choose-standard-button").hide();
+  $(".js-prerequisites, .js-no-results").hide();
   $("#standard-name").autocomplete({
     source: function(request, response) {
       $.getJSON("/public/javascripts/standards.json", function(data) {

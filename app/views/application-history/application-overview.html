@@ -34,9 +34,17 @@
       <h2 class="govuk-heading-m">
         Declarations
       </h2>
-      <span id="declarations-hint" class="govuk-hint apply-hint">
-        7 of 33 questions completed
-      </span>
+      {% if
+        data['breach-of-tax']
+      %}
+        <span id="declarations-hint" class="govuk-hint apply-hint">
+          33 of 33 questions completed
+        </span>
+      {% else %}
+        <span id="declarations-hint" class="govuk-hint apply-hint">
+          32 of 33 questions completed
+        </span>
+      {% endif %}
       <p class="govuk-body"><a href="declarations" class="govuk-link">Go to declarations</a></p>
     </div>
 
@@ -45,12 +53,20 @@
         Financial health
       </h2>
       <span id="financial-health-hint" class="govuk-hint apply-hint">
-        5 of 14 questions completed
+        14 of 14 questions completed
       </span>
       <p class="govuk-body"><a href="financial-health" class="govuk-link">Go to financial health</a></p>
     </div>
 
-
+      {% if
+        data['breach-of-tax']
+      %}
+        <form action="../journey-end" method="post">
+          <button type="submit" class="govuk-button">
+          Continue
+        </button>
+      </form>
+      {% endif %}
   </div>
 </div>
 

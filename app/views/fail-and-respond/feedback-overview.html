@@ -33,17 +33,30 @@
 
           <li class="app-task-list__item">
             <a aria-describedby="eligibility-completed" class="app-task-list__task-name" href="questions/audit">Internal audit policies and processes</a>
-            <!-- <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong> -->
+            {% if
+              data['internal-audit']
+            %}
+            <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            {% endif %}
           </li>
 
           <li class="app-task-list__item">
             <a aria-describedby="eligibility-completed" class="app-task-list__task-name" href="questions/insurance">Insurance</a>
-            <!-- <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong> -->
+              {% if
+              data['insurance']
+            %}
+            <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            {% endif %}
           </li>
 
           <li class="app-task-list__item">
             <a aria-describedby="eligibility-completed" class="app-task-list__task-name" href="questions/safeguarding">Safeguarding policy</a>
-            <!-- <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong> -->
+            
+            {% if
+              data['safeguarding']
+            %}
+            <strong class="govuk-tag app-task-list__task-completed" id="completed">Completed</strong>
+            {% endif %}
           </li>
 
         </ul>

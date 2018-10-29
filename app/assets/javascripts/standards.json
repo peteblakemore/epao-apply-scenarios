@@ -100,5 +100,19 @@
       "Air traffic controlling requirement 6",
       "Air traffic controlling requirement 7"
     ]
+  },
+  {
+    "value": "financial adviser",
+    "name": "Financial advising",
+    "requirements": [
+      "Financial advising requirement 1",
+      "Financial advising requirement 2",
+      "Financial advising requirement 3",
+      "Financial advising requirement 4",
+      "Financial advising requirement 5",
+      "Financial advising requirement 6",
+      "Financial advising requirement 7",
+      "Financial advising requirement 8"
+    ]
   }
 ]
